@@ -6,6 +6,10 @@ const signupSchema = zod.object({
     username: zod.string().email(),
     password: zod.string()
 })
+const signinschema = zod.object({
+    username: zod.string().email(),
+    password: zod.string()
+});
 
 const updateSchema = zod.object({
     firstName: zod.string().optional(),
